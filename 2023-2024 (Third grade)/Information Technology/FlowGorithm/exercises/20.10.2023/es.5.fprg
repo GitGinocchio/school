@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Studente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-20 12:03:44 "/>
+        <attribute name="created" value="U3R1ZGVudGU7Q0FMVU5PLTAzLTEwMzsyMDIzLTEwLTIwOyIxMDo1OTowNyAiOzI4MTg="/>
+        <attribute name="edited" value="U3R1ZGVudGU7Q0FMVU5PLTAzLTEwMzsyMDIzLTEwLTIwOyIxMjowMzo0NCAiOzM7MjkyMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n" type="Integer" array="False" size=""/>
+            <declare name="num, sum, avg" type="Real" array="False" size=""/>
+            <output expression="&quot;Su quanti numeri vuoi fare la media?&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="sum" expression="0"/>
+            <for variable="i" start="0" end="n - 1" direction="inc" step="1">
+                <output expression="&quot;Inserisci il &quot; &amp; i+1 &amp; &quot; numero (&gt;= 0): &quot;" newline="True"/>
+                <input variable="num"/>
+                <while expression="!(num &gt;= 0)">
+                    <output expression="&quot;Valore non accettato!&quot;" newline="True"/>
+                    <output expression="&quot;Inserisci il &quot; &amp; i+1 &amp; &quot; numero (&gt;= 0): &quot;" newline="True"/>
+                    <input variable="num"/>
+                </while>
+                <assign variable="sum" expression="sum + num"/>
+            </for>
+            <assign variable="avg" expression="sum/n"/>
+            <output expression="&quot;La media dei &quot; &amp; n &amp; &quot; numeri &#232;: &quot; &amp; avg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

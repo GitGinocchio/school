@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Giulio Tognetto"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-06 08:11:01 "/>
+        <attribute name="created" value="R2l1bGlvIFRvZ25ldHRvO0tORUVGOzIwMjMtMTAtMDY7IjA2OjAyOjE5ICI7MzA0OQ=="/>
+        <attribute name="edited" value="R2l1bGlvIFRvZ25ldHRvO0tORUVGOzIwMjMtMTAtMDY7IjA4OjExOjAxICI7NDszMTUz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, j" type="Integer" array="False" size=""/>
+            <output expression="&quot;Quanti numeri vuoi aggiungere?&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="Nums" type="Real" array="True" size="n"/>
+            <for variable="i" start="0" end="n - 1" direction="inc" step="1">
+                <output expression="&quot;inserisci il numero &quot; &amp; i+1 &amp; &quot;: &quot;" newline="True"/>
+                <input variable="Nums[i]"/>
+            </for>
+            <assign variable="i" expression="0"/>
+            <for variable="j" start="0" end="n - 1" direction="inc" step="1">
+                <for variable="i" start="0" end="n - 1" direction="inc" step="1">
+                    <if expression="i != j &amp;&amp; Nums[i] == Nums[j]">
+                        <then>
+                            <output expression="&quot;I numeri: &quot; &amp; i+1 &amp; &quot; e &quot; &amp; j+1 &amp; &quot; hanno lo stesso valore di &quot; &amp; Nums[i]" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

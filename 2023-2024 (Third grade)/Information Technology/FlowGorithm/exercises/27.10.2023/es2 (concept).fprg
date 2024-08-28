@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Studente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-27 10:24:20 "/>
+        <attribute name="created" value="U3R1ZGVudGU7Q0FMVU5PLTAzLTEwMzsyMDIzLTEwLTI3OyIwOTo1ODo1NiAiOzI4MzY="/>
+        <attribute name="edited" value="U3R1ZGVudGU7Q0FMVU5PLTAzLTEwMzsyMDIzLTEwLTI3OyIxMDoyNDoyMCAiOzI7MjkyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ore1, ore2, ore3, compensotot, i" type="Integer" array="False" size=""/>
+            <assign variable="ore1" expression="3"/>
+            <assign variable="ore2" expression="2"/>
+            <assign variable="ore3" expression="1"/>
+            <assign variable="compensotot" expression="10000"/>
+            <output expression="&quot;Compenso prima persona: &quot; &amp; (compensotot * ore1) / (ore1 + ore2 + ore3)" newline="True"/>
+            <output expression="&quot;Compenso prima persona: &quot; &amp; (compensotot * ore2) / (ore1 + ore2 + ore3)" newline="True"/>
+            <output expression="&quot;Compenso prima persona: &quot; &amp; (compensotot * ore3) / (ore1 + ore2 + ore3)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

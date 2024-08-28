@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+}
+
+#circle {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    border-radius: 50%;
+    background-color: red;
+    height: 190px;
+    width: 190px;
+}
+
+#container {
+    position: relative;
+    height: 500px;
+    width: 900px;
+    background-color: white;
+}

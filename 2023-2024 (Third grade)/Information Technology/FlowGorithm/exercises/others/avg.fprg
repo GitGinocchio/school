@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-13 11:47:25 "/>
+        <attribute name="created" value="YWRtaW47U1RFTVNQQS0xNjsyMDIzLTA5LTI5OyIwOTowNToyMCAiOzI0MDg="/>
+        <attribute name="edited" value="YWRtaW47U1RFTVNQQS0xNjsyMDIzLTA5LTI5OyIwOTozNDozNyAiOzI7MjUyNw=="/>
+        <attribute name="edited" value="U3R1ZGVudGU7Q0FMVU5PLTA0LTEwNDsyMDIzLTEwLTA2OyIwOTo1NToyMyAiOzI7MjkzNQ=="/>
+        <attribute name="edited" value="U3R1ZGVudGU7Q0FMVU5PLTAzLTEwMzsyMDIzLTEwLTEzOyIxMTo0NzoyNSAiOzI7MjkyNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Su quanti numeri vuoi fare la media? &quot;" newline="True"/>
+            <declare name="numN, a" type="Integer" array="False" size=""/>
+            <input variable="numN"/>
+            <declare name="NUMS" type="Real" array="True" size="numN"/>
+            <declare name="sumNUMS" type="Real" array="False" size=""/>
+            <assign variable="sumNUMS" expression="0"/>
+            <for variable="a" start="0" end="Size(NUMS) - 1" direction="inc" step="1">
+                <output expression="&quot;Inserisci il numero &quot; &amp; a+1 &amp; &quot;:&quot;" newline="True"/>
+                <input variable="NUMS[a]"/>
+                <assign variable="sumNUMS" expression="sumNUMS + NUMS[a]"/>
+            </for>
+            <output expression="&quot;La media totale dei &quot; &amp; Size(NUMS) &amp; &quot; numeri &#232;: &quot; &amp; sumNUMS / Size(NUMS)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

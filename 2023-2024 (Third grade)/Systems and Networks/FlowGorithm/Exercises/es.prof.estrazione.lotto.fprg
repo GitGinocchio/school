@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Studente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-15 10:59:16 "/>
+        <attribute name="created" value="U3R1ZGVudGU7Uk9CLTE0LTExOzIwMjMtMTEtMTU7IjEwOjUzOjE1ICI7MjU0NQ=="/>
+        <attribute name="edited" value="U3R1ZGVudGU7Uk9CLTE0LTExOzIwMjMtMTEtMTU7IjEwOjU5OjE2ICI7MTsyNjYw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="nums" type="Integer" array="True" size="5"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <assign variable="nums[i]" expression="Random(90)"/>
+                <while expression=""/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

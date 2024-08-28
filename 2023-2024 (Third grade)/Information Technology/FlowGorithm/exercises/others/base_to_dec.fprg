@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Giulio Tognetto"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-19 03:39:24 "/>
+        <attribute name="created" value="R2l1bGlvIFRvZ25ldHRvO0tORUVGOzIwMjMtMTAtMjQ7IjA0OjAzOjI5ICI7MzA0OQ=="/>
+        <attribute name="edited" value="R2l1bGlvIFRvZ25ldHRvO0tORUVGOzIwMjMtMTEtMTk7IjAzOjM5OjI0ICI7NDszMTY4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bin, hex" type="String" array="False" size=""/>
+            <assign variable="hex" expression="&quot;0123456789ABCDEF&quot;"/>
+            <declare name="dec, i, base" type="Integer" array="False" size=""/>
+            <assign variable="dec" expression="0"/>
+            <output expression="&quot;Inserisci una base (2,3,4,5,6,7,8,9,16): &quot;" newline="True"/>
+            <input variable="base"/>
+            <output expression="&quot;Inserisci un numero in base 2: &quot;" newline="True"/>
+            <input variable="bin"/>
+            <for variable="i" start="0" end="Len(bin) - 1" direction="inc" step="1">
+                <assign variable="dec" expression="dec + base ^ (Len(bin) - (i + 1)) * ToInteger(Char(bin,i))"/>
+            </for>
+            <output expression="dec" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

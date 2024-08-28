@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Studente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-27 11:31:07 "/>
+        <attribute name="created" value="U3R1ZGVudGU7Q0FMVU5PLTAzLTEwMzsyMDIzLTEwLTI3OyIxMDoxNjo0OSAiOzI4MjQ="/>
+        <attribute name="edited" value="U3R1ZGVudGU7Q0FMVU5PLTAzLTEwMzsyMDIzLTEwLTI3OyIxMDo1NToyNyAiOzE7U3R1ZGVudGU7Q0FMVU5PLTAzLTEwMzsyMDIzLTEwLTI3OyIwOTo1ODo1NiAiO2VzMiAobm9uIGZpbml0bykuZnByZzs3NzUz"/>
+        <attribute name="edited" value="U3R1ZGVudGU7Q0FMVU5PLTAzLTEwMzsyMDIzLTEwLTI3OyIxMTozMTowNyAiOzM7MjkyNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Quante persone hanno lavorato?&quot;" newline="True"/>
+            <input variable="n"/>
+            <while expression="!(n &gt; 0)">
+                <output expression="&quot;Numero non accettato!&quot;" newline="True"/>
+                <output expression="&quot;Quante persone hanno lavorato?&quot;" newline="True"/>
+                <input variable="n"/>
+            </while>
+            <declare name="Ore" type="Integer" array="True" size="n"/>
+            <declare name="sommaOre" type="Integer" array="False" size=""/>
+            <declare name="compensoTotale" type="Integer" array="False" size=""/>
+            <assign variable="sommaOre" expression="0"/>
+            <for variable="i" start="0" end="Size(Ore) - 1" direction="inc" step="1">
+                <output expression="&quot;Quante ore ha lavorato la persona numero &quot; &amp; i+1 &amp; &quot;?&quot;" newline="True"/>
+                <input variable="Ore[i]"/>
+                <assign variable="sommaOre" expression="sommaOre + Ore[i]"/>
+            </for>
+            <output expression="&quot;Quanto &#232; il compenso totale?&quot;" newline="True"/>
+            <input variable="compensoTotale"/>
+            <while expression="!(compensoTotale &gt; 0)">
+                <output expression="&quot;Numero non accettato!&quot;" newline="True"/>
+                <output expression="&quot;Quanto &#232; il compenso totale?&quot;" newline="True"/>
+                <input variable="compensoTotale"/>
+            </while>
+            <assign variable="i" expression="0"/>
+            <for variable="i" start="0" end="Size(Ore) - 1" direction="inc" step="1">
+                <output expression="&quot;Compenso della persona numero &quot; &amp; i+1 &amp; &quot;: &quot; &amp; (compensoTotale * Ore[i]) / sommaOre" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

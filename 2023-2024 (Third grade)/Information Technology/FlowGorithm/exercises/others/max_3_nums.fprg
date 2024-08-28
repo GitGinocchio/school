@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Giulio Tognetto"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-02 07:09:08 "/>
+        <attribute name="created" value="R2l1bGlvIFRvZ25ldHRvO0tORUVGOzIwMjMtMTAtMDI7IjA2OjM0OjA0ICI7MzA0NA=="/>
+        <attribute name="edited" value="R2l1bGlvIFRvZ25ldHRvO0tORUVGOzIwMjMtMTAtMDI7IjA2OjU1OjUzICI7MTthZG1pbjtTVEVNU1BBLTE2OzIwMjMtMDktMjk7IjA5OjA1OjIwICI7bWVkaWFfcGnDuV9udW1lcmkuZnByZzs3OTg2"/>
+        <attribute name="edited" value="R2l1bGlvIFRvZ25ldHRvO0tORUVGOzIwMjMtMTAtMDI7IjA3OjA5OjA4ICI7NzszMTY1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nums" type="Real" array="True" size="3"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <for variable="i" start="0" end="Size(nums) -1" direction="inc" step="1">
+                <output expression="&quot;Inserisci il numero &quot; &amp; i+1 &amp; &quot;:&quot;" newline="True"/>
+                <input variable="nums[i]"/>
+            </for>
+            <declare name="max" type="Real" array="False" size=""/>
+            <assign variable="max" expression="nums[0]"/>
+            <assign variable="i" expression="0"/>
+            <for variable="i" start="0" end="Size(nums) - 1" direction="inc" step="1">
+                <if expression="nums[i] &gt; max">
+                    <then>
+                        <assign variable="max" expression="nums[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;Il numero massimo e': &quot; &amp; max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+}
+
+#green {
+    background-color: green;
+    height: 500px;
+    width: 300px;
+}
+#white {
+    background-color: white;
+    height: 500px;
+    width: 300px;
+}
+#red {
+    background-color: red;
+    height: 500px;
+    width: 300px;
+}
+#container {
+    display:flex;
+}

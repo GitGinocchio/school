@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Studente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-13 12:12:08 "/>
+        <attribute name="created" value="U3R1ZGVudGU7Q0FMVU5PLTAzLTEwMzsyMDIzLTEwLTEzOyIxMTo0NzoyOCAiOzI4MjE="/>
+        <attribute name="edited" value="U3R1ZGVudGU7Q0FMVU5PLTAzLTEwMzsyMDIzLTEwLTEzOyIxMjoxMjowOCAiOzI7MjkyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <declare name="sum, num" type="Real" array="False" size=""/>
+            <output expression="&quot;Quanti numeri devi inserire?&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="sum" expression="0"/>
+            <for variable="i" start="0" end="n -1" direction="inc" step="1">
+                <output expression="&quot;Inserisci il &quot; &amp; i+1 &amp; &quot; numero: &quot;" newline="True"/>
+                <input variable="num"/>
+                <assign variable="sum" expression="sum+num"/>
+            </for>
+            <output expression="&quot;La media dei &quot; &amp; n &amp; &quot; numeri &#232;: &quot; &amp; sum / n" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

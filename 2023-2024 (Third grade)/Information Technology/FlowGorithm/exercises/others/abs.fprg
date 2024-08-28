@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Giulio Tognetto"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-02 05:49:18 "/>
+        <attribute name="created" value="R2l1bGlvIFRvZ25ldHRvO0tORUVGOzIwMjMtMTAtMDI7IjA1OjQyOjQyICI7MzA0NA=="/>
+        <attribute name="edited" value="R2l1bGlvIFRvZ25ldHRvO0tORUVGOzIwMjMtMTAtMDI7IjA1OjQ5OjE4ICI7MTszMTYy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Real" array="False" size=""/>
+            <input variable="n"/>
+            <if expression="n &lt; 0">
+                <then>
+                    <assign variable="n" expression="n * -1"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;ora il numero letto e' sicuramente positivo!&quot;" newline="True"/>
+            <output expression="n" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

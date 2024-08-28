@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Studente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-06 11:28:31 "/>
+        <attribute name="created" value="U3R1ZGVudGU7Q0FMVU5PLTA0LTEwNDsyMDIzLTEwLTA2OyIxMDo1MjozNiAiOzI4MTk="/>
+        <attribute name="edited" value="U3R1ZGVudGU7Q0FMVU5PLTA0LTEwNDsyMDIzLTEwLTA2OyIxMToyODozMSAiOzQ7MjkyOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Area" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci l'area della circonferenza (centimetri quadrati)&quot;" newline="True"/>
+            <input variable="Area"/>
+            <while expression="Area &lt;= 0">
+                <output expression="&quot;Errore, impossibile fare la radice quadrata di un negativo&quot;" newline="True"/>
+                <output expression="&quot;Inserisci l'area della circonferenza (centimetri quadrati)&quot;" newline="True"/>
+                <input variable="Area"/>
+            </while>
+            <output expression="&quot;Il perimetro di questa circonferenza &#232; di: &quot; &amp; Sqrt(4 * pi * Area) &amp; &quot; centimetri&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

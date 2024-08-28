@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-06 09:56:14 "/>
+        <attribute name="created" value="YWRtaW47U1RFTVNQQS0xNjsyMDIzLTA5LTI5OyIwOTowNToyMCAiOzI0MDg="/>
+        <attribute name="edited" value="YWRtaW47U1RFTVNQQS0xNjsyMDIzLTA5LTI5OyIwOTozNDozNyAiOzI7MjUyNw=="/>
+        <attribute name="edited" value="R2l1bGlvIFRvZ25ldHRvO0tORUVGOzIwMjMtMTAtMDM7IjEyOjEyOjE2ICI7MTszMTQ5"/>
+        <attribute name="edited" value="U3R1ZGVudGU7Q0FMVU5PLTA0LTEwNDsyMDIzLTEwLTA2OyIwOTo1NjoxNCAiOzE7MjkzNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Su quanti numeri vuoi fare la media? &quot;" newline="True"/>
+            <declare name="numN, a" type="Integer" array="False" size=""/>
+            <input variable="numN"/>
+            <declare name="NUMS" type="Real" array="True" size="numN"/>
+            <declare name="sumNUMS" type="Real" array="False" size=""/>
+            <assign variable="sumNUMS" expression="0"/>
+            <for variable="a" start="0" end="Size(NUMS) - 1" direction="inc" step="1">
+                <output expression="&quot;Inserisci il numero &quot; &amp; a+1 &amp; &quot;:&quot;" newline="True"/>
+                <input variable="NUMS[a]"/>
+                <assign variable="sumNUMS" expression="sumNUMS + NUMS[a]"/>
+            </for>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <assign variable="avg" expression="sumNums / Size(NUMS)"/>
+            <output expression="&quot;La media totale dei &quot; &amp; Size(NUMS) &amp; &quot; numeri &#232;: &quot; &amp; avg" newline="True"/>
+            <if expression="avg &lt;= 4">
+                <then>
+                    <output expression="&quot;BOCCIATO&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="avg &gt; 4 &amp;&amp; avg &lt; 6">
+                        <then>
+                            <output expression="&quot;RIMANDATO&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="avg &gt; 6">
+                                <then>
+                                    <output expression="&quot;PROMOSSO&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

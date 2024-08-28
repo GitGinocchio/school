@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Studente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-20 09:54:07 "/>
+        <attribute name="created" value="U3R1ZGVudGU7Q0FMVU5PLTAzLTEwMzsyMDIzLTEwLTIwOyIwOTo0Njo1MCAiOzI4MjA="/>
+        <attribute name="edited" value="U3R1ZGVudGU7Q0FMVU5PLTAzLTEwMzsyMDIzLTEwLTIwOyIwOTo1NDowNyAiOzE7MjkyOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci il primo numero:&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Inserisci il secondo numero:&quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;Inserisci il terzo numero:&quot;" newline="True"/>
+            <input variable="n3"/>
+            <output expression="&quot;Il risultato di (n1+n2+n3) ^ 2 &#232;: &quot; &amp; (n1+n2+n3) ^ 2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

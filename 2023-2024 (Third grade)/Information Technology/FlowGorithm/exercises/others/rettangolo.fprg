@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Giulio Tognetto"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-24 07:11:03 "/>
+        <attribute name="created" value="R2l1bGlvIFRvZ25ldHRvO0tORUVGOzIwMjMtMDktMjQ7IjA2OjQ1OjIzICI7MzA1OQ=="/>
+        <attribute name="edited" value="R2l1bGlvIFRvZ25ldHRvO0tORUVGOzIwMjMtMDktMjQ7IjA3OjExOjAzICI7MTszMTU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="L1, L2, Perimetro, Area" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci un lato del rettangolo (centimetri)&quot;" newline="True"/>
+            <input variable="L1"/>
+            <output expression="&quot;Inserisci il secondo lato del rettangolo (centimetri)&quot;" newline="True"/>
+            <input variable="L2"/>
+            <assign variable="Perimetro" expression="2 * (L1 + L2)"/>
+            <assign variable="Area" expression="L1 * L2"/>
+            <output expression="&quot;Il perimetro del rettangolo &#232; di &quot; &amp; Perimetro &amp; &quot; centimetri&quot;" newline="True"/>
+            <output expression="&quot;L'area del rettangolo &#232; di &quot; &amp; Area  &amp; &quot; centimetri&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

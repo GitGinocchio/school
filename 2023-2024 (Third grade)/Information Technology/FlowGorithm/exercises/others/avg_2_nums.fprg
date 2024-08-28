@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-28 10:23:18 "/>
+        <attribute name="created" value="YWRtaW47U1RFTVNQQS0xNjsyMDIzLTA5LTI4OyIxMDowMzo0OSAiOzI0MDg="/>
+        <attribute name="edited" value="YWRtaW47U1RFTVNQQS0xNjsyMDIzLTA5LTI4OyIxMDoyMzoxOCAiOzM7MjUxNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N1, N2, N3, MEDIA" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci il primo numero:&quot;" newline="True"/>
+            <input variable="N1"/>
+            <output expression="&quot;Inserisci il secondo numero:&quot;" newline="True"/>
+            <input variable="N2"/>
+            <output expression="&quot;Inserisci il terzo numero:&quot;" newline="True"/>
+            <input variable="N3"/>
+            <assign variable="MEDIA" expression="(N1 + N2 + N3) / 3"/>
+            <output expression="&quot;La media dei tre numeri &#232; : &quot; &amp; MEDIA" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

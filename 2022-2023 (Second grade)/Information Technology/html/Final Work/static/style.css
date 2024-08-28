@@ -1,0 +1,46 @@
+.bigtitle{
+    color:darkorange;
+    font-family: Helvetica, Arial,sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.title{
+    color:darkorange;
+    font-family: Helvetica, Arial,sans-serif;
+    text-align: left;
+    text-indent: 5px;
+    font-weight: bold;
+}
+
+.subtitle {
+    color:black;
+    font-weight: bold;
+    font-family: Helvetica, Arial,sans-serif;
+    text-align: left;
+}
+
+.top {
+    background-color: floralwhite;
+    font-family: Helvetica, Arial,sans-serif;
+}
+
+body {
+    background-color:antiquewhite;
+    text-align: left;
+}
+
+footer {
+    color:black;
+    font-weight: bold;
+    font-family: Helvetica, Arial,sans-serif;
+    text-align: left;
+    text-indent:15px;
+    background-color:floralwhite;
+}
+
+a {
+    color:lightslategray;
+    font-weight: bold;
+}

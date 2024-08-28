@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Studente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-20 11:33:33 "/>
+        <attribute name="created" value="U3R1ZGVudGU7Q0FMVU5PLTAzLTEwMzsyMDIzLTEwLTIwOyIxMDoyMDo0MSAiOzI4MDQ="/>
+        <attribute name="edited" value="U3R1ZGVudGU7Q0FMVU5PLTAzLTEwMzsyMDIzLTEwLTIwOyIxMTozMzozMyAiOzI7MjkxOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci un numero &gt;= 1: &quot;" newline="True"/>
+            <input variable="n"/>
+            <while expression="!(n &gt;= 1)">
+                <output expression="&quot;Numero non accettato!&quot;" newline="True"/>
+                <output expression="&quot;Inserisci un numero &gt;= 1: &quot;" newline="True"/>
+                <input variable="n"/>
+            </while>
+            <output expression="&quot;Ecco 11 multipli di &quot; &amp; n &amp; &quot;: &quot;" newline="True"/>
+            <for variable="i" start="0" end="10" direction="inc" step="1">
+                <output expression="n * i" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

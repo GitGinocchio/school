@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Studente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-20 11:22:06 "/>
+        <attribute name="created" value="U3R1ZGVudGU7Q0FMVU5PLTAzLTEwMzsyMDIzLTEwLTIwOyIxMDowMDoyNiAiOzI4MDU="/>
+        <attribute name="edited" value="U3R1ZGVudGU7Q0FMVU5PLTAzLTEwMzsyMDIzLTEwLTIwOyIxMToyMjowNiAiOzI7MjkxNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, eta, sumeta" type="Integer" array="False" size=""/>
+            <declare name="avgeta" type="Real" array="False" size=""/>
+            <output expression="&quot;Su quante et&#224; vuoi fare la media?&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="sumeta" expression="0"/>
+            <for variable="i" start="0" end="n - 1" direction="inc" step="1">
+                <output expression="&quot;Inserisci l'et&#224; numero &quot; &amp; i + 1 &amp; &quot;: &quot;" newline="True"/>
+                <input variable="eta"/>
+                <while expression="!(eta &gt;= 14 &amp;&amp; eta &lt;= 20)">
+                    <output expression="&quot;Et&#224; non accettata!&quot;" newline="True"/>
+                    <output expression="&quot;Inserisci l'et&#224; numero &quot; &amp; i + 1 &amp; &quot;: &quot;" newline="True"/>
+                    <input variable="eta"/>
+                </while>
+                <assign variable="sumeta" expression="sumeta + eta"/>
+            </for>
+            <assign variable="avgeta" expression="sumeta / n"/>
+            <output expression="&quot;La media delle &quot; &amp; n &amp; &quot; et&#224; inserite &#232;: &quot; &amp; avgeta" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,49 @@
+@font-face {
+    font-family: Pretendard;
+    font-weight: 45 920;
+    font-display: swap;
+    src: url("/static/fonts/PretendardStdVariable.woff2");
+  }
+  
+  @font-face {
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    font-display: swap;
+    src: url("/static/fonts/ibmplexmono-regular.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "IBM Plex Mono";
+    font-weight: 700;
+    font-display: swap;
+    src: url("/static/fonts/ibmplexmono-bold.woff2") format("woff2");
+  }
+
+body {
+    font-family: Pretendard, apple-system, system-ui, "Helvetica", "Arial", sans-serif;
+    background-color: #fdfdfd;
+    color: #262626;
+  }
+
+.subtitle {
+    font-weight: 500;
+    font-size: 1.225rem;
+  }
+
+.fancy-link {
+    color: #1e40af;
+    transition: color 0.1s, background-color 0.1s;
+    background-color: #2563eb33;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 0.16em 0.3em;
+    font-size: 15px;
+    margin: -0.2em 0;
+    line-height: 1.7;
+    white-space: nowrap;
+  }
+
+  .fancy-link:hover {
+    color: #2563eb;
+    background-color: #3b82f633;
+  }

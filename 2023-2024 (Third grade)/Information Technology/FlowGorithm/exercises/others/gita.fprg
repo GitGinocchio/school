@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Studente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-06 02:52:48 "/>
+        <attribute name="created" value="U3R1ZGVudGU7Q0FMVU5PLTA0LTEwNDsyMDIzLTEwLTA2OyIxMTo0OTo1NiAiOzI4Mjg="/>
+        <attribute name="edited" value="U3R1ZGVudGU7Q0FMVU5PLTA0LTEwNDsyMDIzLTEwLTA2OyIxMjoxOTo0MyAiOzI7MjkzMQ=="/>
+        <attribute name="edited" value="R2l1bGlvIFRvZ25ldHRvO0tORUVGOzIwMjMtMTAtMDY7IjAyOjUyOjQ4ICI7MjszMTYx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nS" type="Integer" array="False" size=""/>
+            <declare name="nD, Ticket" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci il costo del biglietto: &quot;" newline="True"/>
+            <input variable="Ticket"/>
+            <while expression="Ticket &lt;= 0">
+                <output expression="&quot;Errore, Costo del biglietto inferiore a 0&quot;" newline="True"/>
+                <output expression="&quot;Inserisci il costo del biglietto: &quot;" newline="True"/>
+                <input variable="Ticket"/>
+            </while>
+            <output expression="&quot;Inserisci il numero degli studenti: &quot;" newline="True"/>
+            <input variable="nS"/>
+            <while expression="Ns &lt;= 0">
+                <output expression="&quot;Numero di studenti non valido&quot;" newline="True"/>
+                <output expression="&quot;Inserisci il numero degli studenti: &quot;" newline="True"/>
+                <input variable="nS"/>
+            </while>
+            <assign variable="nD" expression="nS / 10"/>
+            <if expression="nD &gt; Int(nD)">
+                <then>
+                    <assign variable="nD" expression="Int(nD) + 1"/>
+                </then>
+                <else/>
+            </if>
+            <declare name="Tot" type="Real" array="False" size=""/>
+            <assign variable="Tot" expression="(nS * Ticket) + (nD * (Ticket / 2))"/>
+            <output expression="&quot;Il numero dei docenti &#232;: &quot; &amp; nD" newline="True"/>
+            <output expression="&quot;Il costo totale &#232;: &quot; &amp; Tot" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

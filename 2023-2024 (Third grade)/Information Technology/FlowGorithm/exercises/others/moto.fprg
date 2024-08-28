@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Giulio Tognetto"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-10 04:44:04 "/>
+        <attribute name="created" value="R2l1bGlvIFRvZ25ldHRvO0tORUVGOzIwMjMtMTAtMTA7IjA0OjM2OjA5ICI7MzA0OA=="/>
+        <attribute name="edited" value="R2l1bGlvIFRvZ25ldHRvO0tORUVGOzIwMjMtMTAtMTA7IjA0OjQ0OjA0ICI7MTszMTUw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="costoMoto, risparmi, importo" type="Integer" array="False" size=""/>
+            <assign variable="costoMoto" expression="1000"/>
+            <assign variable="risparmi" expression="0"/>
+            <while expression="risparmi &lt; costoMoto">
+                <output expression="&quot;Inserisci l'importo:&quot;" newline="True"/>
+                <input variable="importo"/>
+                <assign variable="risparmi" expression="risparmi + importo"/>
+            </while>
+            <output expression="&quot;Ora puoi comprare la moto!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

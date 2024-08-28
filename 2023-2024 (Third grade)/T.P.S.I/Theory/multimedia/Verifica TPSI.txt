@@ -1,0 +1,62 @@
+[ASCII] (lunghezza fissa) (bin)
+1 byte con il MSB(most significant bit) sempre 0
+0bbb-bbbb
+bbbb-bbbb (ascii extended)
+
+-----------------------------------------------------------
+[UNICODE] (lunghezza fissa) (hex)
+preceduto da U+0x
+U+0xbbbb-bbbb (codepoint)
+assume valori da U+0x00000000 fino a U+0xFFFFFFFF
+
+-----------------------------------------------------------
+[UTF-8] (sottocodifica dell'unicode) (lunghezza variabile)
+
+{1 byte con il MSB sempre 0} (ASCII)
+0zzz-zzzz
+
+{2 byte}
+110y-yyyy 10zz-zzzz
+
+{3 byte}
+1110-yyyy 10yy-yyyy 10zz-zzzz
+
+{4 byte}
+1111-0www 10xx-xxxx 10yy-yyyy 10zz-zzzz
+
+----------------------------------------------------------
+[BCD (Binary Coded Decimal)] (numeri da 0 a 9)
+4 bit con peso uguale al binario (8 4 2 1)
+per creare la tabella inserire meno 1 possibili utilizzando sempre i bit piu' significativi possibili.
+
+----------------------------------------------------------
+[Quinario] (numeri da 0 a 12)
+4 bit con pesi (5 4 2 1)
+i primi 5 numeri sono uguali ai successivi 5 
+per creare la tabella inserire meno 1 possibili utilizzando sempre i bit piu' significativi possibili.
+
+----------------------------------------------------------
+[Bi-Quinario] (numeri da 0 a 9)
+7 bit divisi in 2 + 5 con pesi (0 5 - 0 1 2 3 4)
+deve essere presente un solo 1 per sezione
+per creare la tabella inserire meno 1 possibili utilizzando sempre i bit piu' significativi possibili.
+
+----------------------------------------------------------
+[Codice 2 su 5] (numeri da 0 a 9)
+5 bit con pesi (6 3 2 1 0)
+per fare la tabella
+lo 0 e' 00110
+per creare la tabella inserire meno 1 possibili utilizzando sempre i bit piu' significativi possibili ma mantenendo sempre almeno due 1.
+
+----------------------------------------------------------
+[Aiken (codice 2421)]
+4 bit con pesi (2 4 2 1)
+
+per creare la tabella basta andare dall'esterno all'interno invertendo i bit:
+0 - 0000 | 9 - 1111
+1 - 0001 | 8 - 1110
+2 - 0010 | 7 - 1101
+3 - 0011 | 6 - 1100
+4 - 0100 | 5 - 1011
+
+
